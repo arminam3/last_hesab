@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+
+{% block title %}
+    Week Details
+{% endblock title %}
+
+{% block extra %}
+    <span>    اضافه کردن فرد</span>
+{% endblock extra %}
+
+{% block content %}
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <p>{{ form.as_table }}</p>
+            <button type="submit" class="btn btn-success">
+                ذخیره
+            </button>
+        </form>
+    </div>
+
+{% endblock content %}

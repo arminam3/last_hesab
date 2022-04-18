@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block title %}
+    حساب ها
+{% endblock title %}
+
+{% block extra %}
+    <span>   حساب ها </span>
+
+
+{% endblock extra %}
+
+{% block content %}
+    {% for hesab in hesabs %}
+        <p>{{ hesab.negative }}  {{ hesab.amount }}  </p>==>*{{ hesab.plus }}*
+    {% endfor %}
+
+{% endblock content %}
