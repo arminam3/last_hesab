@@ -252,7 +252,7 @@ def last_hesab_refresh(request, pk):
                 print('++++++++')
 
             except:
-
+                pass
         except:
             last_hesab = LastHesab.objects.create(week=week, plus=main_hesab.plus, negative=main_hesab.negative, amount=main_hesab.amount)
 
